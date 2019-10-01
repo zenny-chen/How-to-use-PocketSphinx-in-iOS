@@ -7,7 +7,7 @@ iOS中如何嵌入并使用PocketSphinx
 
 首先，对英文比较熟悉的童鞋可以看CMUSphinx官方的GitHub中的iOS demo：https://github.com/cmusphinx/pocketsphinx-ios-demo 。这里其实就一份描述文件和一份`build_iphone.sh`文件，可谓极其简陋。不过各位不用担心，macOS对开源代码的编译十分方便，即便现在Apple默认使用的是Xcode预装的Apple LLVM，但与GCC也基本兼容，所以也不用感到畏惧。如果各位对这段说明不太理解，那么请看下文的详细描述。不过，这里我们先把`build_iphone.sh`文件下载下来。
 
-如果你的macOS上尚未安装autoconf与automake，那么请根据这篇博文进行安装：https://www.jianshu.com/p/497a26736eae 。这两个是作为自动配置、自动编译必备的工具，但最近这几代macOS都没有默认安装，所以我们需要自己手工安装一下。
+如果你的macOS上尚未安装autoconf与automake，那么请根据这篇博文进行安装：[macOS下安装autoconf与automake以及其相关的库](https://github.com/zenny-chen/On-macOS-Install-autoconf-and-automake/blob/master/README.md)。这两个是作为自动配置、自动编译必备的工具，但最近这几代macOS都没有默认安装，所以我们需要自己手工安装一下。
 
 完成之后，进入这个链接：https://github.com/cmusphinx/sphinxbase ，下载sphinxbase。这个库是Sphinx的基础库，所有版本的Sphinx都依赖此库。下载完成后，我们先把主文件夹名由sphinxbase-master改成 **sphinxbase** 。然后我们在控制台中进入sphinxbase目录，再输入以下shell命令：
 
