@@ -1,4 +1,4 @@
-# How To Sse PocketSphinx In iOS
+# How To Use PocketSphinx In iOS
 iOS中如何嵌入并使用PocketSphinx
 
 <br />
