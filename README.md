@@ -46,7 +46,7 @@ $(SRCROOT)/SphinxTest/sphinx/sphinxbase
 
 <br />
 
-各位可以在本仓库获得完整的demo项目工程。
+各位可以在本仓库获得完整的demo项目工程。**这里需要注意的是：** 各位在构建运行本demo值钱，需要将 **`/SphinxTest/model/en-us/en-us.lm.bin.zip`** 文件解压到当前目录，并且解压后的文件路径为： **/SphinxTest/model/en-us/en-us.lm.bin** 。
 
 如果我们要屏蔽CMUSphinx内部的打印信息，那么我们可以先引入头文件`<sphinxbase/err.h>`，然后在调用任意CMUSphinx的API之前先调用一下`err_set_logfp(NULL);`即可。
 
